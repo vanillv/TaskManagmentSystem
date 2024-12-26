@@ -1,0 +1,9 @@
+admins:
+  admin-0:
+    id: 0
+    username: "first"
+    email:
+  admin-1:
+    id: 1
+    username: "snowball"
+    email:

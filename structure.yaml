@@ -1,0 +1,50 @@
+java:
+  config:
+    SecurityConfig: error
+    SwaggerConfig: empty
+  controllers:
+    AdminTaskController: empty
+    AuthController: empty
+    UserTaskController: empty
+  dto:
+    auth:
+      AuthRequestDto: exists
+      AuthResponseDto: exists
+    comment:
+      CommentCreateDto: empty
+      CommentResponseDto: empty
+    task:
+      TaskCreateDto: empty
+      TaskResponseDto: empty
+      TaskUpdateDto:  empty
+  entities:
+    enums:
+      Role:
+        ADMIN;
+        USER;
+    TaskPriority:
+      HIGH;
+      MEDIUM;
+      LOW;
+    TaskStatus:
+      COMPLETED;
+      IN_PROGRESS;
+      WAITING;
+    Comment: exists
+    Task: exists
+    User: exists
+  repositories:
+    CommentRepository: exists
+    TaskRepository: exists
+    UserRepository: exists
+  security:
+    JwtTokenProvider: exists
+    UserDetailsServiceImpl: exists
+  services:
+    AuthService: exists
+    CommentService: empty
+    TaskService: exists
+    UserService: exists
+  util:
+    DateUtil: empty
+    PaginationUtil: empty
